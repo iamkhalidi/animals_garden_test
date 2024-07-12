@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:article_name",
+ "creation": "2024-05-23 19:06:49.916672",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "article_name",
+  "owner1",
+  "isbn",
+  "article_cost",
+  "total_cost",
+  "cb1_column",
+  "status",
+  "publisher",
+  "ticket_delivery_cost",
+  "test",
+  "sb1_section",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "test",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article Name ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "owner1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Issued\nAvailable"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher   "
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cb1_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "article_cost",
+   "fieldtype": "Int",
+   "label": "Article Cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Int",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "ticket_delivery_cost",
+   "fieldtype": "Int",
+   "label": "Ticket Delivery Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 18:41:30.314353",
+ "modified_by": "Administrator",
+ "module": "Animals Garden",
+ "name": "Article_Garden",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

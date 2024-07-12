@@ -1,0 +1,84 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"X7gNJIdTxx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member And Membership</span>\",\"col\":12}},{\"id\":\"xtPra8AIkl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Member\",\"col\":3}},{\"id\":\"SIknPgv27B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Settings\",\"col\":3}},{\"id\":\"wUn68_0iIs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Membership\",\"col\":3}},{\"id\":\"RKqRZ3ryJm\",\"type\":\"card\",\"data\":{\"card_name\":\"Elements\",\"col\":6}}]",
+ "creation": "2024-06-01 19:57:47.129545",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "up",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Animals Garden",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Elements",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Users",
+   "link_count": 0,
+   "link_to": "User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Group",
+   "link_count": 0,
+   "link_to": "User Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-02 18:05:21.689811",
+ "modified_by": "Administrator",
+ "module": "Animals Garden",
+ "name": "Animals Garden",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Garden Member",
+   "link_to": "Garden Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Garden Settings",
+   "link_to": "Garden Settings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Garden Membership",
+   "link_to": "Garden Membership",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Animals Garden"
+}

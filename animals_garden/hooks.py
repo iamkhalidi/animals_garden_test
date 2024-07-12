@@ -133,23 +133,33 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"animals_garden.tasks.all"
-# 	],
-# 	"daily": [
-# 		"animals_garden.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"animals_garden.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"animals_garden.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"animals_garden.tasks.monthly"
-# 	],
-# }
+scheduler_events = {  
+
+    "cron": {
+        "* * * * *": [
+            "animals_garden.tasks.cron"
+        ],
+        "* * * * *": [
+            "animals_garden.tasks.cron2"
+        ]
+    },
+
+	"all": [
+		"animals_garden.tasks.all"
+	],
+	"daily": [
+		"anim als_garden.tasks.daily"
+	],
+	"hourly": [
+		"animals_garden.tasks.hourly"
+	],
+	"weekly": [
+		"animals_garden.tasks.weekly"
+	],
+	"monthly": [
+		"animals_garden.tasks.monthly"
+	],
+}
 
 # Testing
 # -------

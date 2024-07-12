@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-02 17:51:35.870969",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_period",
+  "cb1_column",
+  "maximum_number_of_issued_articles",
+  "sb1_section",
+  "add_a_comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "loan_period",
+   "fieldtype": "Data",
+   "label": "Loan Period"
+  },
+  {
+   "fieldname": "cb1_column",
+   "fieldtype": "Column Break",
+   "label": "CB1"
+  },
+  {
+   "fieldname": "maximum_number_of_issued_articles",
+   "fieldtype": "Data",
+   "label": "Maximum Number Of Issued Articles"
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break",
+   "label": "SB1"
+  },
+  {
+   "fieldname": "add_a_comment",
+   "fieldtype": "Long Text",
+   "label": "Add a comment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-02 17:54:40.280951",
+ "modified_by": "Administrator",
+ "module": "Animals Garden",
+ "name": "Garden Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
