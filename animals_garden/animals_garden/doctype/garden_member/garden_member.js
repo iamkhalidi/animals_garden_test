@@ -8,7 +8,6 @@ frappe.ui.form.on("Garden Member", {
 
 
     last_name: function(){
-        // here test for github status
         
         let fName = frm.dmyMessageoc.first_name;
         let lName = frm.doc.last_name;
