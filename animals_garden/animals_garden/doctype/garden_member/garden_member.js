@@ -79,9 +79,9 @@ frappe.ui.form.on("Garden Member", {
                 "animals_garden.animals_garden.doctype.garden_member.api.get_all_members",
                 callback: function(mbrs){
                     console.log(typeof mbrs); 
-                    if(mbrs) {
+                    if(mbrs) { 
                         console.log(mbrs);
-                    } else {
+                    } else {    
                         console.log('no data found');
                     }
                 }
