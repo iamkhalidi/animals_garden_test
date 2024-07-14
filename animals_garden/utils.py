@@ -18,6 +18,13 @@ def sendMail(doc, recepients, msg, title, attachments=None):
     # 4
 
 
+def test_hook(doc, event):
+    print(f"-------------------- {doc} -------------{event}-----------------")
+
+
+
+
+
 
 # 1-
 # doc: is about your specific doctype

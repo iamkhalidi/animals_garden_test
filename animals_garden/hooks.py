@@ -122,44 +122,49 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+ 
+ 
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# },
+    "Article_Garden": {
+		"validate": "animals_garden.utils.test_hook",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {  
+# scheduler_events = {  
 
-    "cron": {
-        "* * * * *": [
-            "animals_garden.tasks.cron"
-        ],
-        "* * * * *": [
-            "animals_garden.tasks.cron2"
-        ]
-    },
+#     "cron": {
+#         "* * * * *": [
+#             "animals_garden.tasks.cron"
+#         ],
+#         "* * * * *": [
+#             "animals_garden.tasks.cron2"
+#         ]
+#     },
 
-	"all": [
-		"animals_garden.tasks.all"
-	],
-	"daily": [
-		"anim als_garden.tasks.daily"
-	],
-	"hourly": [
-		"animals_garden.tasks.hourly"
-	],
-	"weekly": [
-		"animals_garden.tasks.weekly"
-	],
-	"monthly": [
-		"animals_garden.tasks.monthly"
-	],
-}
+# 	"all": [
+# 		"animals_garden.tasks.all"
+# 	],
+# 	"daily": [
+# 		"anim als_garden.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"animals_garden.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"animals_garden.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"animals_garden.tasks.monthly"
+# 	],
+# }
 
 # Testing
 # -------
