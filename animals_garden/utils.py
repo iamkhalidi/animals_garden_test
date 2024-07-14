@@ -19,7 +19,8 @@ def sendMail(doc, recepients, msg, title, attachments=None):
 
 
 def test_hook(doc, event):
-    print(f"-------------------- {doc} -------------{event}-----------------")
+    print(f"--------{doc.owner1}--------")
+    # you can reach to any field by writing its doc.name
 
 
 
