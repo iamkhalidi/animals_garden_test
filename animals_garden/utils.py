@@ -20,7 +20,25 @@ def sendMail(doc, recepients, msg, title, attachments=None):
 
 def test_hook(doc, event):
     print(f"--------{doc.owner1}--------")
+    frappe.msgprint("this is msgprint in test_hook function")
     # you can reach to any field by writing its doc.name
+
+
+
+
+def save_note(doc, event):
+
+
+    doc_title = doc.article_name
+
+    new_note = frappe.get_doc({
+        "doctype" : "Note",
+        "title" : doc_title
+    })
+
+    new_note.insert()
+    # frappe.db.commit()
+    # sometimes insert doesn't work so use this
 
 
 

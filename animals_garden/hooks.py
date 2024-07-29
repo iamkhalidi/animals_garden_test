@@ -132,6 +132,7 @@ doc_events = {
 	# },
     "Article_Garden": {
 		"validate": "animals_garden.utils.test_hook",
+        "after_insert" : "animals_garden.utils.save_note"
 	}
 }
 
