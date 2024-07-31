@@ -2,7 +2,6 @@ import frappe
 
 
 # github 
-# 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((()))
 
 
 
