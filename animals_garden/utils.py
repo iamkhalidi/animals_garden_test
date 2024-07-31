@@ -1,6 +1,11 @@
 import frappe
 
 
+# github 
+# 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
+
+
+
 
 def sendMail(doc, recepients, msg, title, attachments=None):
     print('test print method in python with email sender in frappe ********* ****************************************************************************************')
@@ -42,6 +47,18 @@ def save_note(doc, event):
 
 
 
+# lesson 4 advanced
+@frappe.whitelist()
+def get_owner_articles(owner1 = None, publisher= None): # or you can just not pass any arg in the  parameter to get all the articles
+
+    print("")
+
+    articles = frappe.db.sql(f""" SELECT * FROM `tabArticle_Garden` WHERE owner1='{owner1}'; """, as_dict=True)
+    return articles
+
+    # after passing the parameter you can call it from the frontend file   
+
+
 
 
 
@@ -66,3 +83,11 @@ def save_note(doc, event):
 #           queue="short" : if your email not very important write long.
 #           **email_args : it would give you the key elements of our email
 #               address.
+
+# 5-
+# http://127.0.0.1:8000/api/method/animals_garden.utils.get_owner_articles
+#   you can use api method from the browser
+
+
+
+
