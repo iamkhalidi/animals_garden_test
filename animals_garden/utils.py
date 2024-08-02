@@ -47,17 +47,17 @@ def save_note(doc, event):
 
 
 # lesson 4 advanced
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def get_owner_articles(owner1 = None, publisher= None): # or you can just not pass any arg in the  parameter to get all the articles
 
     print(f"\n\n\n\n   {publisher}  \n\n\n\n\n\n")
 
     articles = frappe.db.sql(f""" SELECT * FROM `tabArticle_Garden` WHERE owner1='{owner1}'; """, as_dict=True)
     return articles
+    
 
     # after passing the parameter you can call it from the frontend file   
 
-# 54 min 4 less a
 
 
 
