@@ -30,9 +30,9 @@ PageContent = Class.extend({
 
 					<div class="card">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h5 class="card-title">Article Count</h5>
+							<h1 id="article-count"></h1>     <!-- use the id below to fill this with data -->
+
 						</div>
 						</div>
 
@@ -41,18 +41,29 @@ PageContent = Class.extend({
 
 
 				<div class="col-md-4">
-							<h3>We are here </h3>
+							<h3> This is itme two   </h3>
 						</div>
 
 			</div>
 		</div>
 
 
-
 		`;
+
+		let articleCount = function(){
+			frappe.call({
+				method: "animals_garden.animals_garden.page.custom_page.custom_page.get_article_count", // write dotted path
+				callback: function(articleCount){
+					console.log(articleCount);
+					$("#article-count").text(articleCount.message) // #article-count is id for tag above 
+				}
+			});
+		}
 
 
 		$(frappe.render_template( htmlContent, this)).appendTo(this.page.main);  
+
+		articleCount();
 	
 	}
 })
