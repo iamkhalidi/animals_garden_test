@@ -19,6 +19,8 @@ PageContent = Class.extend({
 	}, //                takes the whole page
 
 
+
+	
 	make: function() {
 		// html content - css - js
 
@@ -37,8 +39,8 @@ PageContent = Class.extend({
 						</div>
 
 						
-				</div>
-
+				</div> 
+				
 
 				<div class="col-md-4">
 							<h3> This is itme two   </h3>
