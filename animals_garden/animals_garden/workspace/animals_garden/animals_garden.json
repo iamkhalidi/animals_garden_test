@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"X7gNJIdTxx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member And Membership</span>\",\"col\":12}},{\"id\":\"xtPra8AIkl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Member\",\"col\":3}},{\"id\":\"SIknPgv27B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Settings\",\"col\":3}},{\"id\":\"wUn68_0iIs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Membership\",\"col\":3}},{\"id\":\"RKqRZ3ryJm\",\"type\":\"card\",\"data\":{\"card_name\":\"Elements\",\"col\":6}}]",
+ "content": "[{\"id\":\"X7gNJIdTxx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member And Membership</span>\",\"col\":12}},{\"id\":\"xtPra8AIkl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Member\",\"col\":3}},{\"id\":\"SIknPgv27B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Settings\",\"col\":3}},{\"id\":\"wUn68_0iIs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Garden Membership\",\"col\":3}},{\"id\":\"RKqRZ3ryJm\",\"type\":\"card\",\"data\":{\"card_name\":\"Elements\",\"col\":6}},{\"id\":\"x1RzGmLhsw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"DocType List\",\"col\":3}}]",
  "creation": "2024-06-01 19:57:47.129545",
  "custom_blocks": [],
  "docstatus": 0,
@@ -43,7 +43,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-06-02 18:05:21.689811",
+ "modified": "2024-08-08 18:08:54.626387",
  "modified_by": "Administrator",
  "module": "Animals Garden",
  "name": "Animals Garden",
@@ -55,6 +55,14 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "DocType List",
+   "link_to": "DocType",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Pink",
    "doc_view": "",
