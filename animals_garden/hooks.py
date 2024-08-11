@@ -52,6 +52,17 @@ app_license = "mit"
 # Generators
 # ----------
 
+# lesson 9 url routing
+
+website_route_rules = [
+    {"from_route":"/garden/course/<name>", "to_route":"garden/course"} 
+]
+# list of dictionary :
+#  {"from_route":"/garden/course/<name>", "to_route":"garden/course"} 
+
+
+
+
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
