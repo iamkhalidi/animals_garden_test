@@ -312,7 +312,26 @@
   {% endfor %}
 
 
+  <!-- lesson 10 advanced : 55 min -->
+  {% if prev %}
+  <a href="/?page=1" class="btn btn-secondary">First</a>
+  {% endif %}
+
+  {% if prev %}
+  <a href="/?page={{prev}}" class="btn btn-info">Previous</a>
+  {% endif %}
+
+  {% if next %}
+  <a href="/?page={{next}}" class="btn btn-success">Next</a>
+  {% endif %}
+
+
+
+
+
 </div>
+
+
 <!-- /course list -->
     <!-- mobile see all button -->
     <div class="row">

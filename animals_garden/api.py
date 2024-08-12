@@ -16,8 +16,8 @@ def paginate(doctype, page=0):
     # if it has page and not just the home page
     if(page):
         page = int(page)
-        articles = frappe.db.sql(query + f""" LIMIT {(page*3)-3} ,3 """, as_dict=True)
-        next_page = frappe.db.sql(query + f""" LIMIT {page*3} ,3 """, as_dict=True)
+        articles = frappe.db.sql(query+f""" LIMIT {(page*3)-3}, 3 """, as_dict=True)
+        next_page = frappe.db.sql(query+f""" LIMIT {page*3}, 3 """, as_dict=True)
 
         # if i have data
         if(next_page):
@@ -34,10 +34,10 @@ def paginate(doctype, page=0):
         else:
             pass
 
-        articles = frappe.db.sql(query + """ LIMIT 3 """, as_dict=True)
+        articles = frappe.db.sql(query+""" LIMIT 3 """, as_dict=True)
 
     return {
-        "aritcles": articles,
+        "articles": articles,
         "prev": prev,
         "next": next
     }
